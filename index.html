@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Eni Collection</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <img src="assets/logo/logo.png" alt="logo" class="logo" width="200px">
+                <ul>
+                    <li class="button"><a href="#">Login</a></li> 
+                    <li class="button"><a href="#bio">Biodata</a></li>
+                    <li class="button"><a href="#about">Tentang Kami</a></li>
+                    <li class="button"><a href="#flex">Produk</a></li>
+                    <li class="button"><a href="#jumbotron">Beranda</a></li>
+                </ul>
+
+                <div class="menu">
+                    <input type="checkbox"/>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="jumbotron">
+            <div class="container">
+                <div class="text">
+                    <h1>BELANJA PAKAIAN.</h1>
+                    <h1>BELANJA DISINI LEBIH AMAN.</h1>
+                    <p>Memudahkan jual beli berbagai macam pakaian tanpa keluar rumah.</p>
+                    <p>Belanja tidak lagi ribet, dijamin aman dan nyaman</p>
+                    <div class="daftar">
+                        <p>Daftar Eni Collection sekarang!</p>
+                        <div class="btn">
+                            <a href="#" class="btn-ec">Daftar Eni Collection</a>
+                            <p>atau</p>
+                            <p><a href="#" class="btn-email"><span></span>Daftar dengan email</a></p>
+                            <p><a href="#" class="btn-fb"><span></span>Daftar dengan facebook</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <article>
+            <div id="flex">
+                <h1>PRODUK</h1>
+                <div class="container">
+                    
+                    <div class="baju"><img src="assets/img/pakaian/kaos.jpg"><h3>Kaos</h3></div>
+                    <div class="celana"><img src="assets/img/pakaian/celana.jpg"><h3>Celana</h3></div>
+                    <div class="rok"><img src="assets/img/pakaian/rok.jpg"><h3>Rok</h3></div>
+                    <div class="jaket"><img src="assets/img/pakaian/jaket.jpg"><h3>Jaket</h3></div>
+                    <div class="topi"><img src="assets/img/pakaian/topi.jpg"><h3>Topi</h3></div>
+                    <div class="kemeja"><img src="assets/img/pakaian/kemeja.jpg"><h3>Kemeja</h3></div>
+                    <div class="sepatu"><img src="assets/img/pakaian/sweeter.jpg"><h3>Sepatu</h3></div>
+                    <div class="sweeter"><img src="assets/img/pakaian/sepatu.jpg"><h3>Sweeter</h3></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </article>
+        <article>
+            <div id="about">
+                <div class="container">
+                    <br>
+                    <span></span>
+                    <h1>Tentang Kami</h1>
+                    <img src="assets/img/baju2.png" width="300px" alt="">
+                    <h3 class="ket">Butik Terlengkap di Indonesia</h3>
+                    <p class="tentang">Eni Collection adalah perusahaan yang bergerak dibidang fashion untuk berbelanja berbagai jenis pakaian secara mudah, sekaligus memungkinkan pengalaman berbelanja online yang lebih aman dan nyaman. </p>
+                    
+                    
+                </div>
+            </div>
+        </article>
+        <aside>
+            <article>
+                <div class="container">
+                    <h1 id="bio">Biodata</h1>
+                    <div class="biodata">
+                        <img src="assets/img/yapi.jpeg" alt="aku">
+                        <h1 id="nama">Rafli Nailur Rizqi</h1>
+                        <p>Akun Dicoding:raflinailurrizqi_ww</p>
+                    </div>
+                </div>
+            </article>
+        </aside>
+    </main>
+    <footer>
+        <div class="footer-flex">
+            <div class="footer-left"><img src="assets/logo/logo.png" width="200px">
+                <p>Eni Collection adalah website jual beli berbagai jenis pakaian, mulai dari baju hingga celana.</p>
+            </div>
+            <div class="footer-mid">
+                <h1>Kategori</h1>
+                <ul>
+                    <li><a href="#">Kaos</a></li>
+                    <li><a href="#">Celana</a></li>
+                    <li><a href="#">Rok</a></li>
+                    <li><a href="#">Jaket</a></li>
+                    <li><a href="#">Topi</a></li>
+                    <li><a href="#">Sepatu</a></li>
+                    <li><a href="#">Sweeter</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h1>Hubungi Kami</h1>
+                <br>
+                <p>Untuk informasi lebih lanjut hubungi alamat berikut ini.</p>
+                <br>
+                <p>Jl. Perintis Muda No.223, Konoha gakure, Rumania</p>
+                <p>Telp. (024)7364543 Fax.(024)0198368</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- fungsi java script  -->
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // Tambahkan smooth scrolling ke semua link
+        $("a").on('click', function(event) {
+
+            // Pastikan this.hash memiliki nilai sebelum mengganti perilaku default
+            if (this.hash !== "") {
+            // Mencegah perilaku klik tautan default
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Menggunakan metode animate() jQuery untuk menambahkan scroll halaman yang smooth
+            // Bilangan opsional (800) menentukan jumlah milidetik yang diperlukan untuk melakukan scrolling ke area yang ditentukan
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1000, function(){
+
+                // Tambahkan hash (#) ke URL setelah selesai scrolling (perilaku klik default)
+                window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+    </script>
+</body>
+</html>

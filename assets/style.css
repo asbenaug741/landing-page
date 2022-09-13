@@ -1,0 +1,368 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family: 'Lucida Grande';
+    box-sizing: border-box;
+    overflow-x: hidden ;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* ___________ Header ____________ */
+
+header{
+    height: 80px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0 5px 1px rgb(170, 170, 170);
+}
+
+nav a{
+    text-decoration: none;
+    line-height: 50px;
+    color: black;
+}
+
+.button{
+    display: inline-block;
+    float: right;
+    margin: 15px;
+    padding: 10px;
+}
+
+.logo{
+    float: left;
+    margin: 20px 0;
+    line-height: 20px;
+}
+
+nav a:hover{
+    border-bottom: 2px solid rgb(255, 146, 164);
+}
+
+nav a:enabled{
+    border-bottom: 2px solid rgb(255, 146, 164);
+}
+
+/* menu responsif */
+
+.menu{
+    display: none;
+    flex-direction: column;
+    float: right;
+    margin: 40px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu input{
+    position: absolute;
+    width: 40px;
+    top: -9px;
+    right: -9px;
+    height: 40px;
+    bottom: 30px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu span{
+    display: block;
+    width: 30px;
+    margin: 3px 0;
+    height: 3px;
+    background-color: rgb(255, 146, 164);
+    transition: all 0.5s;
+}
+
+/* hamburger animation */
+
+.menu span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu span:nth-child(4){
+    transform-origin: 0 0;
+}
+
+.menu input:checked ~ span:nth-child(2){
+    transform: rotate(44deg) translate(1px,0px);
+}
+
+.menu input:checked ~ span:nth-child(4){
+    transform: rotate(-44deg) translate(-3px, 1px);
+}
+
+.menu input:checked ~ span:nth-child(3){
+    transform: scale(0);
+    opacity: 0;
+}
+
+/* ______________ Jumbotron ______________ */
+
+#jumbotron{
+    background-image: url("img/baju.jpg");
+    background-size: cover;
+    padding: 180px 0 100px 0;
+    height: 500px;
+    color: white;
+}
+
+#jumbotron p{
+    font-size: 18px;
+    text-align: center;
+
+}
+
+#jumbotron h1{
+    font-size: 55px;
+    letter-spacing: 6px;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.daftar{
+    margin-top: 50px;
+    line-height: 50px;
+}
+
+.btn{
+    text-align: center;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-ec{
+    background-color: rgba(255, 146, 164, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-fb{
+    background-color: rgba(89, 89, 184,0.9);
+    padding: 10px 20px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.btn-email{
+    background-color: rgba(90, 177, 90,0.9);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* _____________ kategori ___________ */
+
+#flex{
+    background-color: #fcfafa;
+    padding-bottom: 100px;
+}
+
+#flex h1{
+    margin: 100px auto;
+    padding-top: 100px;
+    width: 230px;
+    text-align: center;
+    font-size: 45px;
+    border-bottom: 4px solid rgb(255, 146, 164);
+    
+}
+#flex .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+#flex .container div{
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0px #a5a5a5;
+
+}
+#flex .container div img{
+    width: 220px;
+    height: 220px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* ____________ Tentang Kami ___________ */
+
+#about{
+    margin: 100px 0;
+    background-color: #fcfafa;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#about h1{
+    font-size: 45px;
+    max-width: 300px;
+    margin-bottom: 50px;
+    border-bottom: 4px solid rgb(255, 146, 164);
+}
+
+#about .container span{
+    background-color: rgb(255, 146, 164);
+    border-radius: 5px;
+    padding:170px 100px;
+    float:right;
+}
+
+#about .container img{
+    float: right;
+    margin: -50px -100px 20px 20px;
+}
+
+.tentang{
+    max-width: 600px;
+    margin-right: 10px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+/* _____________ Biodata __________ */
+
+aside{
+    background-color: rgb(255, 146, 164);
+    padding: 100px 0;
+    margin-bottom: 100px;
+}
+
+.biodata{
+    border-radius: 5px;
+    background-color: white;
+    padding: 30px 0;
+    max-width: 300px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 2px 1px rgb(0, 0, 0)
+}
+
+aside .container{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#bio{
+    margin: 30px auto;
+    font-size: 45px;
+    border-bottom: 4px solid rgb(255, 146, 164);
+    width: 150px;
+}
+
+aside .container #nama{
+    font-size: 20px;
+    line-height: 100px;
+}
+
+aside .container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* ___________ Footer __________ */
+
+.footer-flex{
+    width: auto;
+    background-color: #fcfafa;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-flex div{
+    margin: 20px;
+}
+
+.footer-left{
+    max-width: 400px;
+}
+
+.footer-mid a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-mid ul li{
+    text-decoration: none;
+}
+
+/* ____________ Responsive ___________ */
+
+@media all and (max-width: 800px) {
+    #about .container span{
+        padding: 00px 0px;
+    }
+    
+    #about .container img{
+        margin: 20px 0;
+        float: none;
+    }
+    #jumbotron .container{
+        margin-top: -40px;
+    }
+    #jumbotron h1{
+        font-size: 35px;
+    }
+
+    #humbotron p{
+        font-size: 14px;
+    }
+
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 60vhvh;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    nav ul.slide{
+        transform: translateX(0);
+    }
+
+    .menu{
+        display: flex;
+        
+    }
+    
+}
